@@ -1,5 +1,5 @@
 - name: create a VPC with dedicated tenancy and request an IPv6 CIDR
-  amazon.aws.ec2_vpc_net:
+  ec2_vpc_net:
     name: Module_dev2
     cidr_block: 10.10.0.0/16
     ipv6_cidr: True
