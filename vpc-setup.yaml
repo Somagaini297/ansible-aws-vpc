@@ -1,17 +1,7 @@
-- hosts: localhost
-  connection: local
-  gather_facts: False
-  tasks:
-    - name: Import VPC Variables
-      include_vars: vars/vpc_setup
-
-    - name: Create vprofile VPC
-      ec2_vpc_net: 
-        name: "{{vpc_name}}" 
-        cidr_block: "{{vpcCidr}}"
-        region: "{{region}}"
-        dns_support: yes
-        dns_hostname: yes
-        tenancy: default
-        state: "{{state}}"
-      register: vpcout
+- name: create a VPC with dedicated tenancy and request an IPv6 CIDR
+  amazon.aws.ec2_vpc_net:
+    name: Module_dev2
+    cidr_block: 10.10.0.0/16
+    ipv6_cidr: True
+    region: us-east-1
+    tenancy: dedicated
