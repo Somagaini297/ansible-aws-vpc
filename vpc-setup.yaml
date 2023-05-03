@@ -7,7 +7,7 @@
 
     - name: create a VPC with dedicated tenancy and request an IPv6 CIDR
       ec2_vpc_net:
-        name: "{{vpc-name}}"
+        name: "{{vpc_name}}"
         cidr_block: "{{vpcCidr}}"
         region: "{{region}}"
         dns_support: yes
