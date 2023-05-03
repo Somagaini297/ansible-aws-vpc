@@ -1,3 +1,4 @@
-bastion_ami: ami-09d3b3274b6c5d4aa
-region: "us-east-1"
+bastion_ami: ami-06d5c50c30a35fb88
+region: "us-east-2"
+# myip will change so we have to update it
 MYIP: 27.6.69.227/32
