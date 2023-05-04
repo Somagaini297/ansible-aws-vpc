@@ -42,7 +42,7 @@
         region: "{{region}}"
         instance_type: t2.micro
         image: "{{bastion_ami}}"
-        wait: 300
+        wait: yes
         wait_timeout: 300
         instance_tags:
           Name: "Bastion_Host"
