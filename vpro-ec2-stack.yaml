@@ -1,6 +1,6 @@
 ---
 - name: Setup Vprofile stack
-  hosts: loaclhost
+  hosts: localhost
   connection: local
   gather_facts: no
   tasks:
