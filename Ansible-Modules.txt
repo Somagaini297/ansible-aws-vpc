@@ -1,4 +1,6 @@
 # This file contains ansible modules list used in the project
 
 ec2:
-import_playbook:
+ec2_group: for security group
+import_playbook: to import other playbooks
+
