@@ -20,3 +20,7 @@ zone2: us-east-2b
 zone3: us-east-2c
 
 state: present
+
+# Bastion vars && myip will change so we have to update it
+bastion_ami: ami-06d5c50c30a35fb88
+MYIP: 115.98.147.203/32

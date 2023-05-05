@@ -1,0 +1,4 @@
+# This file contains ansible modules list used in the project
+
+ec2:
+import_playbook:
