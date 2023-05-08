@@ -3,4 +3,5 @@
 ec2:
 ec2_group: for security group
 import_playbook: to import other playbooks
-
+local_action: for load balancer
+blockingfile: to create inventory module
